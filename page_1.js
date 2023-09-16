@@ -1,12 +1,13 @@
 const button1 = document.body.querySelector("#button1");
+const button2 = document.body.querySelector("#button2");
 
 const input1 = document.body.querySelector("#num1");
 const input2 = document.body.querySelector("#num2");
 
 const result = document.body.querySelector("#output");
 
-//var num1_value;
-//var num2_value;
+// var num1_value = Number(input1.value);
+// var num2_value = Number(input2.value);
 
 if (input1.value != "") {
     var num1_value = Number(input1.value);
@@ -22,7 +23,7 @@ input1.addEventListener("input", () => {
     } else {
         num1_value = 0;
     }
-    console.log(num1_value);
+    // console.log(num1_value);
 });
 
 input2.addEventListener("input", () => {
@@ -31,12 +32,23 @@ input2.addEventListener("input", () => {
     } else {
         num2_value = 0;
     }
-    console.log(num2_value);
+    // console.log(num2_value);
 });
+
+// result.addEventListener("input", () => {
+//     console.log(result.textContent);
+// });
 
 button1.addEventListener("click", () => {
     result.textContent = addTogether(num1_value, num2_value); 
-    console.log(result.textContent);
+    // console.log(result.textContent);
+});
+
+button2.addEventListener("click", () => {
+    result.textContent = "";
+    input1.value = "";
+    input2.value = "";
+    // console.log(result.textContent);
 });
 
 function addTogether(num1, num2) {
