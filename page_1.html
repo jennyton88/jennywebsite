@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <title>Welcome to page 1!</title>
     </head>
     <body>
@@ -13,8 +13,11 @@
         <table>
             <tr>
                 <td>
-                    Calculator Cat <img src="images/calculatorcat.png" width="300" height="400" alt="Standing cat holding a calculator towards you" title="Standing cat holding a calculator towards you">
+                    <img src="images/calculatorcat.png" width="300" height="400" alt="Standing cat holding a calculator towards you" title="Standing cat holding a calculator towards you">
                 </td>
+            </tr>
+            <tr>
+                <td>Calculator Cat</td>
             </tr>
         </table>
 
@@ -23,28 +26,38 @@
         <table>
             <tr>
                 <td>
-                   Calculator <img src="images/calculator.png" width="300" height="400" alt="Rectangle with several more smaller rectangles within it or a crudely drawn calculator" title="Crudely drawn calculator">
+                    <img src="images/calculator.png" width="300" height="400" alt="Rectangle with several more smaller rectangles within it or a crudely drawn calculator" title="Crudely drawn calculator">
                 </td>
+            </tr>
+            <tr>
+                <td>Calculator</td>
             </tr>
         </table>
 
         <p>Please only use numbers</p>
 
-        <input type="number" id="num1" value="0" placeholder="Input number" required>
-        <input type="number" id="num2" value="0" placeholder="Input number" required>
-        <button id="button1" type="button">Add</button>
+        <div class="container">
+            <input type="number" id="num1" value="0" placeholder="Input number" required>
+            <p id="plusSign"> + </p>
+            <input type="number" id="num2" value="0" placeholder="Input number" required>
 
-        <textarea id="output" placeholder="Result here" readonly></textarea>
+            <button id="button1" type="button">Add</button>
 
-        <button id="button2" type="button">Reset</button>
+            <textarea id="output" placeholder="Result here" readonly></textarea>
+
+            <button id="button2" type="button">Reset</button>
+        </div>
 
         <script src="page_1.js"></script>     
         
         <table>
             <tr>
                 <td>
-                    Cat using calculator <img src="images/calculatorusercat.png" width="300" height="400" alt="Standing cat using a calculator" title="Standing cat using a calculator">
+                    <img src="images/calculatorusercat.png" width="300" height="400" alt="Standing cat using a calculator" title="Standing cat using a calculator">
                 </td>
+            </tr>
+            <tr>
+                <td>Cat using calculator</td>
             </tr>
         </table>
 
@@ -54,5 +67,4 @@
 
         <p><a href="page_2.html">Go to page 2</a></p>
     </body>
-
 </html>

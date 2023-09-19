@@ -1,0 +1,45 @@
+/*
+    palette : #618264 #79AC78 #B0D9B1 #D0E7D2 Dark to light greens
+*/
+
+table,
+td {
+    border: 1px solid #618264;
+}
+
+h1 {
+    background-color: #B0D9B1;
+}
+
+h2 {
+    background-color: #B0D9B1;
+}
+
+h3 {
+    background-color: #B0D9B1;
+}
+
+body {
+    background-color: #D0E7D2;
+    padding: 50px;
+}
+
+button {
+    background-color: #79AC78;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    gap: 1.0rem;
+    flex-direction: column;
+}
+
+#plusSign {
+    text-align: center;
+}
+
+/* p {
+    font-size: 17px
+} */
+
