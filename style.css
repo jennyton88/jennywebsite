@@ -28,6 +28,17 @@ button {
     background-color: #79AC78;
 }
 
+.container {
+    padding: 10px;
+    display: flex;
+    gap: 1.0rem;
+    flex-direction: column;
+}
+
+#plusSign {
+    text-align: center;
+}
+
 /* p {
     font-size: 17px
 } */
