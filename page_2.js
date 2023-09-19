@@ -17,12 +17,10 @@ helloButton.addEventListener("click", () => {
         for (let i=0; i<table1.rows[0].cells.length; i++) {
         
             //let tdID = table1.rows[0].cells[i].id;
-            //const tdElement = document.get
             let originalText = table1.rows[0].cells[i].textContent;
             table1.rows[0].cells[i].textContent = "Hello " + originalText + "!";
-            
         }
-
+        
         pressedOnce = true;
     }
 });
